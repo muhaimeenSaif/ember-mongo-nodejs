@@ -1,0 +1,48 @@
+<style>
+  .button {
+    background-color:#4CAF50;
+    border-radius: 160px;
+    color: white;
+    padding:10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+  }
+</style>
+
+
+<button class="button" {{action 'editPost' post.id post}}>
+  <i class="write icon"></i>
+</button>
+
+{{#ui-modal name=post.id class=post.id}}
+  <div class="header">
+    Edit Post "{{post.title}}"
+  </div>
+  <div class="content">
+    <div class="ui form">
+      <div class="field">
+        <label>Post Title</label>
+        {{input type="text" cols="50" row="1" value = title placeholder = post.title}}
+      </div>
+      <div class="field">
+        <label>Post Body</label>
+        {{textarea  cols="50" row="3" value = body  placeholder = post.body}}
+      </div>
+    </div>
+
+  </div>
+  <br>
+
+  <div class="actions">
+    <div class="ui black deny button">
+      Cancel
+    </div>
+    <div class="ui positive right labeled icon button">
+      Save
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+{{/ui-modal}}

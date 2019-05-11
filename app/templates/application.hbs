@@ -1,0 +1,39 @@
+<img class="ui centered image" src="/assets/images/uwindsor_logo.png" alt="" style="height: 170px;">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" style="padding-left: 10px;">
+        {{#link-to "home"  style="color:white;"}}
+          <p style="color: white;">Home</p>
+        {{/link-to}}
+      </li>
+      <li class="nav-item" style="padding-left: 10px;">
+        {{#link-to "posts"}}
+          <p style="color: white;">Post</p>
+        {{/link-to}}
+      </li>
+      <li class="nav-item" style="padding-left: 10px;">
+        {{#link-to "contact"}}
+          <p style="color: white;"> Contact</p>
+        {{/link-to}}
+      </li>
+    </ul>
+    <div class="form-inline mt-2 mt-md-0 nav-item">
+      {{#link-to "about"}}
+        <p style="color: white;">About</p>
+      {{/link-to}}
+    </div>
+  </div>
+</nav>
+
+{{outlet}}
+{{body-footer}}
+
+
+
+

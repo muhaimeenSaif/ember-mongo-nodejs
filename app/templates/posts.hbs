@@ -1,0 +1,23 @@
+<br>
+<div style="padding: 30px;">
+  <h2>Blog Posts</h2>
+  <table style="width:100%">
+
+    {{#each model as |post|}}
+      <tr>
+        <th>
+          <li>{{post.title}}</li>
+        </th>
+        <th>
+          {{delete-post post=post destroyPost="destroyPost"}}
+        </th>
+        <th>
+          {{edit-post post=post editPost="editPost"}}
+        </th>
+      </tr>
+    {{/each}}
+
+  </table>
+  {{add-new-post}}
+</div>
+{{outlet}}
