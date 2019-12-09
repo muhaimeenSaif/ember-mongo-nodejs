@@ -1,7 +1,7 @@
 # s2-g8-blog-frontend
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+MongoDB for database is used which is a NoSQL DB, node.js as backend and ember as front-end. The combination of all made the application faster for the end-user. 
+There is a folder name S2G8-blog-backend which has the code for the back-end.
 
 ## Prerequisites
 
